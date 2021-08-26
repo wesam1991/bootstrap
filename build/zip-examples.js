@@ -11,7 +11,6 @@
 
 const path = require('node:path')
 const sh = require('shelljs')
-
 const pkg = require('../package.json')
 
 const versionShort = pkg.config.version_short
