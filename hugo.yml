@@ -2,6 +2,9 @@ languageCode:           "en"
 title:                  "Bootstrap"
 baseURL:                "https://getbootstrap.com"
 
+build:
+  noJSConfigInAssets:     true
+
 security:
   enableInlineShortcodes: true
   funcs:
@@ -34,6 +37,8 @@ module:
   mounts:
     - source:           dist
       target:           static/docs/5.3/dist
+    - source:           js/dist
+      target:           assets/bootstrap/js/dist
     - source:           site/assets
       target:           assets
     - source:           site/content

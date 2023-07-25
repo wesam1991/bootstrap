@@ -9,9 +9,10 @@
  * For details, see https://creativecommons.org/licenses/by/3.0/.
  */
 
-(() => {
-  'use strict'
+import codeExamples from '/js/code-examples.js'
+import snippets from '/js/snippets.js'
 
+(() => {
   // Scroll the active sidebar link into view
   const sidenav = document.querySelector('.bd-sidebar')
   const sidenavActiveLink = document.querySelector('.bd-links-nav .active')
@@ -27,4 +28,7 @@
       sidenav.scrollTop = viewportTop - (sidenavHeight / 2) + (sidenavActiveLinkHeight / 2)
     }
   }
+
+  codeExamples()
+  snippets()
 })()

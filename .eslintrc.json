@@ -197,6 +197,23 @@
     },
     {
       "files": [
+        "site/assets/**"
+      ],
+      "env": {
+        "browser": true,
+        "node": false
+      },
+      "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2019
+      },
+      "rules": {
+        "no-new": "off",
+        "unicorn/no-array-for-each": "off"
+      }
+    },
+    {
+      "files": [
         "**/*.md"
       ],
       "plugins": [

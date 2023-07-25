@@ -2,18 +2,18 @@
 // IT'S ALL JUST JUNK FOR OUR DOCS!
 // ++++++++++++++++++++++++++++++++++++++++++
 
-(() => {
-  'use strict'
+import docsearch from '@docsearch/js'
 
+(() => {
   const searchElement = document.getElementById('docsearch')
 
-  if (!window.docsearch || !searchElement) {
+  if (!searchElement) {
     return
   }
 
   const siteDocsVersion = searchElement.getAttribute('data-bd-docs-version')
 
-  window.docsearch({
+  docsearch({
     apiKey: '3151f502c7b9e9dafd5e6372b691a24e',
     indexName: 'bootstrap',
     appId: 'AK7KMZKZHQ',
